@@ -1,0 +1,14 @@
+<%- include("header"); -%>
+
+<div class="container bg-light mt-5 rounded-5 py-2">
+    <form action="/" method="post" class="px-5 mt-2 mb-3">
+        <label class="form-label" for="postTitle">Post Title</label>
+        <input class="form-control post-title mb-3" type="text" id="postTitle" name="postTitle" autocomplete="off">
+
+        <label class="form-label" for="postContent">Post Content</label>
+        <textarea class="form-control post-content"  id="postContent" name="postContent" rows="10"></textarea>
+        <button type="submit" class="btn btn-success mt-4">Submit</button>
+        <button type="reset" class="btn btn-danger mt-4">Reset</button>
+    </form>
+</div>
+<%- include("footer"); -%>

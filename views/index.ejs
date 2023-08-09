@@ -1,0 +1,14 @@
+<%- include("header"); -%>
+
+    <div class="container bg-light mt-5 rounded-5 py-2" id="postList">
+        <div class="postContent ms-4">
+            <% if (posts.length > 0)  { %>
+                <h1>Post title</h1>
+                <p>Post content</p>
+            <% } else {  %>
+                <h1>No Posts</h1>
+            <% } %>
+        </div>
+    </div>
+
+<%- include("footer"); -%>

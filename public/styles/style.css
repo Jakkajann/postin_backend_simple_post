@@ -1,0 +1,38 @@
+body {
+    background-color: #d1dedf;
+}
+
+.navbar .navbar-brand {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.5;
+}
+
+.navbar .nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar .nav-item {
+    padding: 0 2rem;
+}
+
+
+.navbar .navbar-brand:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 
+        opacity 0.5s,
+        transform 0.5s;
+}
+
+.navbar .nav-link:hover {
+    transform: scale(1.4);
+    transition: transform 0.2s;
+}
+
+.navbar-brand {
+    letter-spacing: 1rem;
+}
+
+.post-title {
+    width: 30%;
+}
