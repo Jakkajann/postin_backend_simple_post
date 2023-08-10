@@ -36,3 +36,11 @@ body {
 .post-title {
     width: 30%;
 }
+
+.postContent {
+    word-break: break-all;
+}
+
+.post-link {
+    text-decoration: none;
+}

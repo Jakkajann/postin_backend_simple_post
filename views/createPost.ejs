@@ -1,7 +1,7 @@
-<%- include("header"); -%>
+<%- include("partials/header.ejs"); -%>
 
 <div class="container bg-light mt-5 rounded-5 py-2">
-    <form action="/" method="post" class="px-5 mt-2 mb-3">
+    <form action="/createPost" method="post" class="px-5 mt-2 mb-3">
         <label class="form-label" for="postTitle">Post Title</label>
         <input class="form-control post-title mb-3" type="text" id="postTitle" name="postTitle" autocomplete="off">
 
@@ -11,4 +11,4 @@
         <button type="reset" class="btn btn-danger mt-4">Reset</button>
     </form>
 </div>
-<%- include("footer"); -%>
+<%- include("partials/footer.ejs"); -%>

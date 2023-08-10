@@ -1,14 +1,23 @@
-<%- include("header"); -%>
+<%- include("partials/header.ejs"); -%>
 
     <div class="container bg-light mt-5 rounded-5 py-2" id="postList">
         <div class="postContent ms-4">
             <% if (posts.length > 0)  { %>
-                <h1>Post title</h1>
-                <p>Post content</p>
+                <% posts.forEach(post => { %>
+                    <h1><%= post.title %></h1>
+                    <% if(post.content.length >= 100) { %>
+                        <p>
+                            <%= post.content.substring(0,100) %>
+                            <a class="ms-3 post-link" href="/posts/<%= post.title %>"> Read more... </a>
+                        </p>
+                    <% } else {%>
+                        <p> <%= post.content %></p>
+                    <% } %>
+                <% }); %>
             <% } else {  %>
                 <h1>No Posts</h1>
             <% } %>
         </div>
     </div>
 
-<%- include("footer"); -%>
+<%- include("partials/footer.ejs"); -%>
